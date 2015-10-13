@@ -1,0 +1,25 @@
+.md-toolbar-tools h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: inherit;
+}
+
+footer{
+  background: green;
+  height: 7%;
+}
+
+md-card{
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+.imgCard{
+  padding: 0px;
+}
+
+.divScroll{
+  overflow: scroll;
+  overflow-x: hidden;
+}

@@ -1,0 +1,53 @@
+<html lang="en" ng-app="app">
+  <head>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="initial-scale=1" />
+  </head>
+  <body layout="column" ng-controller="AppCtrl">
+  <!---ToolBar---------------------->
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+        </div>
+    </md-toolbar>
+    <!--Cuerpo-------------------------->
+    <section layout-align="center center" layout="column" flex>
+      <div class="imgGanko" flex>
+          <img src="assets/ganko.png" alt="Icono Ganko" />
+      </div>
+
+      <div layout-align="center center" flex>
+          <form novalidate md-theme="default">
+            <md-input-container>
+              <label>Nombre de Usuario</label>
+              <input type="text" require ng-model="user.usr">
+            </md-input-container>
+            <md-input-container>
+              <label>Contrsenia</label>
+              <input type="password" require>
+            </md-input-container>
+            <div layout="row">
+              <md-button class="md-primary">Registrarse</md-button>
+              <md-button class="md-raised md-primary">Ingresar</md-button>
+            </div>
+
+          </form>
+      </div>
+      </section>
+
+      <footer>
+      </footer>
+    <!-- Angular Material Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-aria.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.js"></script>
+
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="controllers/ControllerFirst.js">
+
+    </script>
+  </body>
+</html>
